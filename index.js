@@ -1,4 +1,4 @@
-var PORT = process.env.PORT || 5000;
+var port = process.env.PORT || 3000;
 const express = require('express');
 const app = express();
 const http = require('http');
@@ -15,8 +15,8 @@ io.on('connection', (socket) => {
     });
   });
 
-server.listen(PORT, () => {
-  console.log('listening on *:5000');
+server.listen(port, () => {
+  console.log('listening on *:3000');
 });
 
 
